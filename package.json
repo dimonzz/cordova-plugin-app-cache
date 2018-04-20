@@ -1,0 +1,17 @@
+{
+  "name": "AppCache",
+  "version": "0.0.1",
+  "description": "Plugin to clear app cache for Android",
+  "cordova": {
+    "id": "cordova-plugin-app-cache",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Dmytro Bezukh",
+  "license": "MIT"
+}

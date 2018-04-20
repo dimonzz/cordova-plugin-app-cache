@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-app-cache" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>AppCache</name>
+	<js-module name="AppCache" src="www/AppCache.js">
+		<clobbers target="AppCache" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="AppCache">
+				<param name="android-package" value="com.dimonzz.app_cache.AppCache" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+		</config-file>
+		<source-file src="src/android/AppCache.java" target-dir="src/com/dimonzz/app_cache" />
+	</platform>
+</plugin>
